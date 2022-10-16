@@ -12,7 +12,7 @@ jobs:
     - name: Install Nuget
       uses: nuget/setup-nuget@v1
       with:
-        nuget-version: '5.x'
+        nuget-version: '6.0'
       
     - name: Build
       run: .\build.cmd -pack -ci -configuration Release -prepareMachine /p:Platform=x86
